@@ -9,16 +9,30 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../../assets/ressources/favicon-16x16.png">
         <link rel="manifest" href="../../assets/ressources/site.webmanifest">
         <link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/bootstrap-icons.min.css">
     </head>
     <body>
         <div class="container">
 
             <!-- DEBUT FORMULAIRE JOUEUR -->
-            <section class="container row " id="formContainer">
-                <div class="mg-auto">
-                    <form >
-                        <input type="text" id="playerName">
-                    </form>
+            <section class="container row" id="formContainer">
+                <div class="m-auto w-50 card p-3">
+                        <div class="input-group mb-3">
+                            <input 
+                                class="form-control" 
+                                type="text" 
+                                id="playerName" 
+                                name="playerName"
+                                placeholder="Player Name"
+                            ><button
+                                id="playerBtn"
+                                type="button"
+                                class="btn btn-success"
+                            >
+                                <i class="bi-person-plus"></i>
+                            </button>
+                        </div>
+                        <button class="btn btn-primary" >PLAY</button>
                 </div>
             </section>
             <!-- FIN FORMULAIRE JOUEUR -->
