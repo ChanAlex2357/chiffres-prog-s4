@@ -7,7 +7,8 @@ gameApp.config(['$routeProvider' ,  $routeProvider =>{
             templateUrl: 'views/home/formulaire-joueur.html'
         })
         .when('/game', {
-            templateUrl: 'views/game.html'
+            templateUrl: 'views/game.html',
+            controller: 'gameController'
         })
         .otherwise({
             redirectTo:'/game'
