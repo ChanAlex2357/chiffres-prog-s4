@@ -6,8 +6,11 @@ gameApp.config(['$routeProvider' ,  $routeProvider =>{
         .when('/home', {
             templateUrl: 'views/home/formulaire-joueur.html'
         })
+        .when('/game', {
+            templateUrl: 'views/game.html'
+        })
         .otherwise({
-            redirectTo:'/home'
+            redirectTo:'/game'
         });
 }]);
 gameApp.run(function($rootScope){

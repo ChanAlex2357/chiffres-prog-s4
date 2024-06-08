@@ -1,7 +1,9 @@
 
             <!-- DEBUT FORMULAIRE JOUEUR -->
+            
             <section class="container row" id="formContainer" ng-controller="playerFormController">
-                <div class="m-auto w-50 card p-3">
+                <div class="mx-auto w-50 card p-5">
+                    
                         <div ng-repeat="player in players">
                             <div class="input-group mb-3">
                                 <input class="form-control" ng-model=player.name>
@@ -14,7 +16,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-5">
                             <input 
                                 class="form-control" 
                                 type="text" 
@@ -29,9 +31,10 @@
                             >
                                 <i class="bi-person-plus"></i>
                             </button>
-                            {{playerName}}
                         </div>
-                        <button class="btn btn-primary">PLAY</button>
+                        <button class="btn btn-primary">P L A Y</button>
+                        <b>{{increase(101)}}</b>
                 </div>
             </section>
+            
             <!-- FIN FORMULAIRE JOUEUR -->
