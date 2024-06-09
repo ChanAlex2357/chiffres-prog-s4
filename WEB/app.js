@@ -18,8 +18,8 @@ gameApp.run(function($rootScope){
     $rootScope.gameConfig ={
         timer : {
             hours   : 0,
-            minutes : 1,
-            secondes: 0
+            minutes : 0,
+            secondes: 5
         },
         numbersIsa : 7
     }

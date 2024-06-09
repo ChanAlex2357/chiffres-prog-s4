@@ -1,5 +1,4 @@
 gameApp.service('validation' , function(){
-    this.validationsList = [];
     this.addValidation = function(player_val,answer_val,time_val){
         this.validationsList.push({
             player : player_val,

@@ -1,6 +1,6 @@
 gameApp.controller(
     'gameController',
-    function($scope,$rootScope,$interval,timer){
+    function($scope,$rootScope,$interval,timer,validation){
         // le chiffre aleatoire en 1 et 100
         $scope.goldenNumber = 567;
         // Les chffres a utiliser lors du calcul
@@ -9,8 +9,6 @@ gameApp.controller(
         $scope.gameStatus = "stop";
         // Le timer
         $scope.timer = $rootScope.gameConfig.timer;
-        // La liste des validation de joueur
-        let validations = [] ;
     /// Functions
         /// Transformer le chiffre en texte de temps
         $scope.timerLayout = function(){
@@ -35,6 +33,19 @@ gameApp.controller(
             $scope.gameStatus = "run";
             /// Lancer le countdown
             $scope.countdowm();
+        }
+        $scope.validations = [];
+        $scope.validationAnswer = function(player,answer){
+            if(answer == null){return}
+            let time ={
+                hr :$scope.timer.hours,
+                mnt:$scope.timer.minutes,
+                sec:$scope.timer.secondes
+            } ;
+            player.validation = 'disabled';
+            $scope.validations.push (
+                {player,answer,time}
+            );
         }
     }
 );
