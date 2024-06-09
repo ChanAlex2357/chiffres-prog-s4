@@ -17,10 +17,10 @@
     </div>
     <!-- / / / -->
 </section>
-
+    <!-- LA LISTE DES CHIFFRES -->
 <section class="row gap-3 text-center mt-3 " >
     <div    class="col bg-light p-2 border-3 rounded" 
-            ng-repeat="gameNumber in gameNumbers">
+            ng-repeat="gameNumber in gameNumbers" ng-click="addToOperaiion(gameNumber)">
             <span class=" number-{{gameStatus}}  h3">{{gameNumber}}</span>
     </div>
 </section>
@@ -29,14 +29,14 @@
 <section class="">
     <section class=" mb-3 row gap-3 text-center mt-3 " >
         <div    class="col bg-light p-2 border-3 rounded" 
-                ng-repeat="operation in gameConfig.operations">
+                ng-repeat="operation in gameConfig.operations" ng-click="addToOperaiion(operation)">
                 <span class=" number-{{gameStatus}}  h3">{{operation}}</span>
         </div>
     </section>
     <form action="" class="{{caseStatus}}">
         <div class="input-group">
-            <button class="btn btn-secondary">Clear</button>
-            <input type="text" id="" class="form-control" ng-model="playerOperation" disabled>
+            <button class="btn btn-secondary" ng-click="clearOperation()">Clear</button>
+            <input type="text" id="" class="form-control" placeholder="" ng-model="playerOperation" disabled>
             <button class="btn btn-success">Valider</button>
         </div>
     </form>

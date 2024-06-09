@@ -36,7 +36,6 @@ gameApp.controller(
                 ,1000
             )
         }
-
         /// Demarrer le jeu
         $scope.startGame = function(){
             if(timer.timerCount($scope.timer)<=0){
@@ -65,7 +64,14 @@ gameApp.controller(
             if($scope.validations.length == $rootScope.players.length){
                 $scope.caseStatus = "visible";
                 $scope.stopCountdown();
+                $scope.clearOperation();
             }
+        }
+        $scope.clearOperation = function(){
+            $scope.playerOperation = "";
+        }
+        $scope.addToOperaiion = function(operate){
+            $scope.playerOperation += operate;
         }
     }
 );
