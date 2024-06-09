@@ -6,7 +6,7 @@ gameApp.controller(
         $scope.playerNumber = isa;
         isa = $scope.playerNumber;
         // Ajouter un joueur dans la liste des joueurs
-        $scope.addPlayer = function(){
+        $scope.addsetPlayer = function(){
              $rootScope.players.push({
                 name: $scope.playerName,
                 point:starterPoint
