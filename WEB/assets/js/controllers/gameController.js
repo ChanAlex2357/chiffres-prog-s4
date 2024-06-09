@@ -7,21 +7,28 @@ gameApp.controller(
         $scope.gameNumbers = [1,2,3,4,5,6,7];
         // L'etat de la partie
         $scope.gameStatus = "stop";
+        $scope.caseStatus = "invisible";
+        $scope.playerOperation = "";
         // Le timer
         $scope.timer = $rootScope.gameConfig.timer;
+        let timerID ;
     /// Functions
         /// Transformer le chiffre en texte de temps
         $scope.timerLayout = function(){
             return timer.fullTimerCaractere($scope.timer);
         }
+        /// Arreter le timer
+        $scope.stopCountdown = function(){
+            $interval.cancel(timerID);
+            $scope.gameStatus = "stop";
+            return;
+        }
         /// Lancer un countdown
         $scope.countdowm = function(){
-            let timerID ;
             timerID = $interval(
                 function(){
                     if(timer.timerCount($scope.timer)<=0){
-                        $interval.cancel(timerID);
-                        $scope.gameStatus = "stop";
+                        $scope.stopCountdown();
                         return;
                     }
                     timer.dicreaseTimer($scope.timer);
@@ -29,6 +36,7 @@ gameApp.controller(
                 ,1000
             )
         }
+
         /// Demarrer le jeu
         $scope.startGame = function(){
             if(timer.timerCount($scope.timer)<=0){
@@ -40,6 +48,8 @@ gameApp.controller(
             $scope.countdowm();
         }
         $scope.validations = [];
+        let b = []
+        b.length
         $scope.validationAnswer = function(player,answer){
             let checkMessage = validation.checkValidation(answer,$scope.gameStatus);
             if(checkMessage != null){
@@ -51,6 +61,11 @@ gameApp.controller(
             $scope.validations.push (
                 {player,answer,time}
             );
+            /// Verifier si on a fait toutes les validations
+            if($scope.validations.length == $rootScope.players.length){
+                $scope.caseStatus = "visible";
+                $scope.stopCountdown();
+            }
         }
     }
 );

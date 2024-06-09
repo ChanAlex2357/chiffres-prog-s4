@@ -21,12 +21,28 @@
 <section class="row gap-3 text-center mt-3 " >
     <div    class="col bg-light p-2 border-3 rounded" 
             ng-repeat="gameNumber in gameNumbers">
-            <span class=" number-{{gameStatus}} h3">{{gameNumber}}</span>
+            <span class=" number-{{gameStatus}}  h3">{{gameNumber}}</span>
     </div>
 </section>
 <hr>
+<!-- VALIDATION D'OPERATION -->
+<section class="">
+    <section class=" mb-3 row gap-3 text-center mt-3 " >
+        <div    class="col bg-light p-2 border-3 rounded" 
+                ng-repeat="operation in gameConfig.operations">
+                <span class=" number-{{gameStatus}}  h3">{{operation}}</span>
+        </div>
+    </section>
+    <form action="" class="{{caseStatus}}">
+        <div class="input-group">
+            <button class="btn btn-secondary">Clear</button>
+            <input type="text" id="" class="form-control" ng-model="playerOperation" disabled>
+            <button class="btn btn-success">Valider</button>
+        </div>
+    </form>
+</section>
 <section class="row gy-3 mt-3">
-    <!-- player card -->
+    <!-- PLAYER CARD -->
     <div class="col-6" ng-repeat="player in players">
         <div class="card bg-dark text-light">
             <div class="card-header text-uppercase text-center d-flex p-0">
@@ -35,7 +51,7 @@
             </div>
             <div class="card-body">
                 <form action="" class="mx-auto w-50 ">
-                        <input required ng-model="playerAnswer" placeholder="Your answer"  type="number" min="0" max="1000" name="" id="" class="form-control {{player.validation}} p-3">
+                        <input required ng-model="playerAnswer" placeholder="Your answer"  type="number" min="0" max="1000" name="" id="" class="form-control p-3" {{player.validation}}>
                         <div class="row mt-3 justify-content-center">
                             <button type="submit" 
                             class="btn btn-primary {{player.validation}} col-5 text-uppercase" 
@@ -45,9 +61,6 @@
             </div>
         </div>
     </div>
-
-
-
     <!-- / / / -->
     <div>{{validations}}</div>
 </section>
