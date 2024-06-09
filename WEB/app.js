@@ -15,6 +15,14 @@ gameApp.config(['$routeProvider' ,  $routeProvider =>{
         });
 }]);
 gameApp.run(function($rootScope){
+    $rootScope.gameConfig ={
+        timer : {
+            hours   : 0,
+            minutes : 1,
+            secondes: 0
+        },
+        numbersIsa : 7
+    }
     $rootScope.players = [
         {
             name:'Player 1',
@@ -26,8 +34,6 @@ gameApp.run(function($rootScope){
         }
     ];
 })
-// FUNCTIONS
-
 // CONTROLLERS
 gameApp.controller(
     'AppController',
