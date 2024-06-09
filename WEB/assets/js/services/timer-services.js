@@ -24,4 +24,11 @@ gameApp.service('timer',function(){
         }
         else{timer.secondes-=1}
     }
+    this.truncTime = function(timer){
+        return {
+            hr : timer.hours ,
+            mnt: timer.minutes ,
+            sec: timer.secondes 
+        } ;
+    }
 })

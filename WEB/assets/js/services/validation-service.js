@@ -1,9 +1,12 @@
 gameApp.service('validation' , function(){
-    this.addValidation = function(player_val,answer_val,time_val){
-        this.validationsList.push({
-            player : player_val,
-            answer : answer_val,
-            time : time_val
-        })
+    this.checkValidation = function(answer,gameStatus){
+        let message = null;
+        if(gameStatus == "stop"){
+            message = "Veuillez attendre que le jeu commences";
+        }
+        else if( answer==null){
+            message = "La reponse ne doit pas etre vide"
+        }
+        return message;
     }
 })

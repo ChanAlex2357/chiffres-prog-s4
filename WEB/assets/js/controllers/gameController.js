@@ -19,16 +19,21 @@ gameApp.controller(
             let timerID ;
             timerID = $interval(
                 function(){
-                    timer.dicreaseTimer($scope.timer);
-                    if(timerCount($scope.timer)<=0){
+                    if(timer.timerCount($scope.timer)<=0){
                         $interval.cancel(timerID);
+                        $scope.gameStatus = "stop";
+                        return;
                     }
+                    timer.dicreaseTimer($scope.timer);
                 }
                 ,1000
             )
         }
         /// Demarrer le jeu
         $scope.startGame = function(){
+            if(timer.timerCount($scope.timer)<=0){
+                return;
+            }
             /// Changer l'etat du jeu
             $scope.gameStatus = "run";
             /// Lancer le countdown
@@ -36,12 +41,12 @@ gameApp.controller(
         }
         $scope.validations = [];
         $scope.validationAnswer = function(player,answer){
-            if(answer == null){return}
-            let time ={
-                hr :$scope.timer.hours,
-                mnt:$scope.timer.minutes,
-                sec:$scope.timer.secondes
-            } ;
+            let checkMessage = validation.checkValidation(answer,$scope.gameStatus);
+            if(checkMessage != null){
+                alert(checkMessage);
+                return;
+            }
+            let time = timer.truncTime($scope.timer);
             player.validation = 'disabled';
             $scope.validations.push (
                 {player,answer,time}
