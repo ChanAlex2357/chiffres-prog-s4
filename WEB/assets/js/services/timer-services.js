@@ -26,9 +26,9 @@ gameApp.service('timer',function(){
     }
     this.truncTime = function(timer){
         return {
-            hr : timer.hours ,
-            mnt: timer.minutes ,
-            sec: timer.secondes 
+            hours : timer.hours ,
+            minutes: timer.minutes ,
+            secondes: timer.secondes 
         } ;
     }
 })

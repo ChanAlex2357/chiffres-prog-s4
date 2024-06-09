@@ -8,10 +8,12 @@ gameApp.controller(
         // L'etat de la partie
         $scope.gameStatus = "stop";
         $scope.caseStatus = "invisible";
-        $scope.playerOperation = "";
+        $scope.playerOperation ;
         // Le timer
         $scope.timer = $rootScope.gameConfig.timer;
         let timerID ;
+
+        $scope.playerValidate = {name:''};
     /// Functions
         /// Transformer le chiffre en texte de temps
         $scope.timerLayout = function(){
@@ -27,7 +29,7 @@ gameApp.controller(
         $scope.countdowm = function(){
             timerID = $interval(
                 function(){
-                    if(timer.timerCount($scope.timer)<=0){
+                    if( timer.timerCount($scope.timer)<=0){
                         $scope.stopCountdown();
                         return;
                     }
@@ -55,16 +57,17 @@ gameApp.controller(
                 alert(checkMessage);
                 return;
             }
-            let time = timer.truncTime($scope.timer);
+            let time_player = timer.truncTime($scope.timer);
             player.validation = 'disabled';
             $scope.validations.push (
-                {player,answer,time}
+                {player,answer, time : timer.timerCount(time_player) }
             );
             /// Verifier si on a fait toutes les validations
             if($scope.validations.length == $rootScope.players.length){
                 $scope.caseStatus = "visible";
                 $scope.stopCountdown();
                 $scope.clearOperation();
+                $scope.playerValidate =  validation.getPlayerValidate($scope.validations);
             }
         }
         $scope.clearOperation = function(){
