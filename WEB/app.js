@@ -26,11 +26,13 @@ gameApp.run(function($rootScope){
     $rootScope.players = [
         {
             name:'Player 1',
-            point:0
+            point:0,
+            validation : 'allowed'
         },
         {
             name:'Player 2',
-            point:0
+            point:0 ,
+            validation : 'allowed'
         }
     ];
 })
