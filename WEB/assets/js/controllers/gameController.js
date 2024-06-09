@@ -9,6 +9,8 @@ gameApp.controller(
         $scope.gameStatus = "stop";
         // Le timer
         $scope.timer = $rootScope.gameConfig.timer;
+        // La liste des validation de joueur
+        let validations = [] ;
     /// Functions
         /// Transformer le chiffre en texte de temps
         $scope.timerLayout = function(){
