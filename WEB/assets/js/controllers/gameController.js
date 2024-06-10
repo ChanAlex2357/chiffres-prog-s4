@@ -20,9 +20,11 @@ gameApp.controller(
             return timer.fullTimerCaractere($scope.timer);
         }
         /// Arreter le timer
+        $scope.timerState = "allowed";
         $scope.stopCountdown = function(){
             $interval.cancel(timerID);
             $scope.gameStatus = "stop";
+            $scope.timerState = "disabled";
             return;
         }
         /// Lancer un countdown
@@ -37,6 +39,7 @@ gameApp.controller(
                 }
                 ,1000
             )
+            $scope.timerState = "disabled";
         }
         /// Demarrer le jeu
         $scope.startGame = function(){
@@ -83,7 +86,8 @@ gameApp.controller(
             /// Verification de la reponse
             if($scope.playerValidate.answer == Number.parseInt($scope.operationResult) ){
                 alert("RESULT is correct : "+$scope.operationResult);
-                $scope.playerValidate.player.points+=1;
+                let current_point = Number.parseInt($scope.playerValidate.player.points)
+                $scope.playerValidate.player.points = current_point + 1;
             }
             else{
                 alert("RESULT is incorect ! : "+$scope.operationResult);

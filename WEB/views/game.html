@@ -2,8 +2,9 @@
 <section class="row gap-3">
     <!-- TIMER -->
     <div class="text-center text-light mx-auto w-25 p-4 border rounded bg-dark">
-        <h1 class="text-{{gameStatus}}">{{ timerLayout() }}</h1>
-        <button class="btn btn-success text-uppercase text-light" id="startBtn" ng-click="startGame()"> start</button>
+        <h1 class="text-{{gameStatus}} text-center">{{ timerLayout() }}
+         <button class="btn text-uppercase text-center text-light fs-2 {{timerState}}" id="startBtn" ng-click="startGame()"><i class="bi bi-play-circle-fill"></i></button>
+        </h1>
     </div>
     <!-- / / / -->
     <!-- LE CHIFFRE -->
@@ -44,10 +45,10 @@
 <section class="row gy-3 mt-3">
     <!-- PLAYER CARD -->
     <div class="col-6" ng-repeat="player in players">
-        <div class="card bg-dark text-light">
+        <div class="card bg-light text-dark">
             <div class="card-header text-uppercase text-center d-flex p-0">
                 <h3 class="w-100">{{player.name}}</h3>
-                <span class="bg-light text-dark col-2 rounded-end"> {{player.point}} pts</span>
+                <span class="bg-dark text-light col-2 rounded-end"> {{player.point}} pts</span>
             </div>
             <div class="card-body">
                 <form action="" class="mx-auto w-50 ">
@@ -58,11 +59,11 @@
                             ng-click="validationAnswer(player,playerAnswer)">valider</button>
                         </div>
                 </form>
+
             </div>
         </div>
     </div>
     <!-- / / / -->
-    <div>{{validations}}</div>
 </section>
 
 <!-- END GAME  -->
