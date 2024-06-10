@@ -1,4 +1,4 @@
-.text-stop {
+.text-stop , .text-validation {
     color: rgb(149, 149, 149);
 }
 .validation-false {
@@ -6,7 +6,9 @@
     cursor: not-allowed;
 }
 
-
+.number-used-true{
+    opacity: 0.2;
+}
 
 .active-case {
     border: 2px;

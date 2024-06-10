@@ -1,10 +1,10 @@
 gameApp.controller(
     'gameController',
-    function($scope,$rootScope,$interval,timer,validation){
+    function($scope,$rootScope,$interval,timer,validation,gameNumber){
         // le chiffre aleatoire en 1 et 100
-        $scope.goldenNumber = 567;
+        $scope.goldenNumber = gameNumber.generateGolden();
         // Les chffres a utiliser lors du calcul
-        $scope.gameNumbers = [1,2,3,4,5,6,7];
+        $scope.gameNumbers = gameNumber.generateNumbers(7,1,100);
         // L'etat de la partie
         $scope.gameStatus = "stop";
         $scope.caseStatus = "invisible";
@@ -67,14 +67,42 @@ gameApp.controller(
                 $scope.caseStatus = "visible";
                 $scope.stopCountdown();
                 $scope.clearOperation();
+                $scope.gameStatus = "validation";
                 $scope.playerValidate =  validation.getPlayerValidate($scope.validations);
             }
         }
         $scope.clearOperation = function(){
             $scope.playerOperation = "";
+            $scope.gameNumbers.forEach(gameNumber => {
+                gameNumber.used = false;
+            });
+        }
+        $scope.operationResult = 0;
+        $scope.submitOperation = function(){
+            $scope.operationResult = eval($scope.playerOperation);
+            /// Verification de la reponse
+            if($scope.playerValidate.answer == Number.parseInt($scope.operationResult) ){
+                alert("RESULT is correct : "+$scope.operationResult);
+                $scope.playerValidate.player.points+=1;
+            }
+            else{
+                alert("RESULT is incorect ! : "+$scope.operationResult);
+            }
         }
         $scope.addToOperaiion = function(operate){
-            $scope.playerOperation += operate;
+            if($scope.gameStatus != 'validation'){
+                return;
+            }
+                if(operate.used == true){
+                    return;
+                }
+                let value = operate.value;
+                if( value === undefined){
+                    value = operate;
+                }
+                $scope.playerOperation += ''+value;
+                operate.used = true;
+                return;
         }
     }
 );
