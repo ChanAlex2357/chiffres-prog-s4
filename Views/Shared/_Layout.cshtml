@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="GameApp" ng-controller="AppController">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les Chiffres</title>
     @* FAV ICONS *@
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/ressources/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/ressources/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/ressources/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/ressources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/ressources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/ressources/favicon-16x16.png">
     @* CSS IMPORTS *@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ChiffresApi.styles.css" asp-append-version="true" />
@@ -37,7 +37,11 @@
                 </div>
               </nav>
         </header>
-        <div class="container mt-3" ng-view></div>
+              <div class="container">
+          <main role="main" class="pb-3">
+              @RenderBody()
+          </main>
+      </div>
     @* SCRIPTS *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
