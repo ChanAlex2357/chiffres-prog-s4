@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JUJZq2KbZzmCOp6CEsjA4H715KFS2UBlQkjGThcF404=",
+  "Hash": "bTS+xT6dnStMRlLbeJC9+92Jp40xgnijeQQfsJoSRTw=",
   "Source": "ChiffresApi",
   "BasePath": "_content/ChiffresApi",
   "Mode": "Default",
@@ -2067,6 +2067,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ressources\\site.webmanifest"
+    },
+    {
+      "Identity": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\views\\game.html",
+      "SourceId": "ChiffresApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\",
+      "BasePath": "_content/ChiffresApi",
+      "RelativePath": "views/game.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\views\\game.html"
+    },
+    {
+      "Identity": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\views\\home\\formulaire-joueur.html",
+      "SourceId": "ChiffresApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\",
+      "BasePath": "_content/ChiffresApi",
+      "RelativePath": "views/home/formulaire-joueur.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\views\\home\\formulaire-joueur.html"
     }
   ]
 }

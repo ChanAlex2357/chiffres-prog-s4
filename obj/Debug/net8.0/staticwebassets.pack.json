@@ -429,6 +429,14 @@
       "PackagePath": "staticwebassets\\ressources\\site.webmanifest"
     },
     {
+      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\views\\game.html",
+      "PackagePath": "staticwebassets\\views\\game.html"
+    },
+    {
+      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\views\\home\\formulaire-joueur.html",
+      "PackagePath": "staticwebassets\\views\\home\\formulaire-joueur.html"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ChiffresApi.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
