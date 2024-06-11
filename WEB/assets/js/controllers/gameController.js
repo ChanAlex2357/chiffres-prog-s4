@@ -21,7 +21,6 @@ gameApp.controller(
             player.validation = 'allowed'
         });
 
-
         $scope.playerValidate = {name:''};
     /// Functions
         /// Transformer le chiffre en texte de temps
@@ -35,6 +34,7 @@ gameApp.controller(
             $scope.gameStatus = "stop";
             $scope.timerState = "disabled";
             return; 
+
         }
         /// Lancer un countdown
         $scope.countdowm = function(){
@@ -95,6 +95,7 @@ gameApp.controller(
                 alert("RESULT is correct : "+$scope.operationResult);
                 let current_point = Number.parseInt($scope.playerValidate.player.point)
                 $scope.playerValidate.player.point = current_point + 1;
+
             }
             else{
                 alert("RESULT is incorect ! : "+$scope.operationResult);
