@@ -10,8 +10,16 @@ gameApp.controller(
         $scope.caseStatus = "invisible";
         $scope.playerOperation ;
         // Le timer
-        $scope.timer = $rootScope.gameConfig.timer;
+        $scope.timer = {
+            hours   : 0,
+            minutes : 1,
+            secondes: 0
+        };
         let timerID ;
+
+        $rootScope.players.forEach( player => {
+            player.validation = 'allowed'
+        });
 
         $scope.playerValidate = {name:''};
     /// Functions
@@ -25,7 +33,8 @@ gameApp.controller(
             $interval.cancel(timerID);
             $scope.gameStatus = "stop";
             $scope.timerState = "disabled";
-            return;
+            return; 
+
         }
         /// Lancer un countdown
         $scope.countdowm = function(){
@@ -52,8 +61,6 @@ gameApp.controller(
             $scope.countdowm();
         }
         $scope.validations = [];
-        let b = []
-        b.length
         $scope.validationAnswer = function(player,answer){
             let checkMessage = validation.checkValidation(answer,$scope.gameStatus);
             if(checkMessage != null){
@@ -86,8 +93,9 @@ gameApp.controller(
             /// Verification de la reponse
             if($scope.playerValidate.answer == Number.parseInt($scope.operationResult) ){
                 alert("RESULT is correct : "+$scope.operationResult);
-                let current_point = Number.parseInt($scope.playerValidate.player.points)
-                $scope.playerValidate.player.points = current_point + 1;
+                let current_point = Number.parseInt($scope.playerValidate.player.point)
+                $scope.playerValidate.player.point = current_point + 1;
+
             }
             else{
                 alert("RESULT is incorect ! : "+$scope.operationResult);
