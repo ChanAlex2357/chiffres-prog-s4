@@ -1,439 +1,439 @@
 {
   "Files": [
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ChiffresApi.bundle.scp.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ChiffresApi.bundle.scp.css",
       "PackagePath": "staticwebassets\\ChiffresApi.bundle.scp.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\css\\bootstrap-icons.min.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\css\\bootstrap-icons.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-icons.min.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\css\\fonts\\bootstrap-icons.woff",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\css\\fonts\\bootstrap-icons.woff",
       "PackagePath": "staticwebassets\\css\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\css\\fonts\\bootstrap-icons.woff2",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\css\\fonts\\bootstrap-icons.woff2",
       "PackagePath": "staticwebassets\\css\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\css\\site.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\css\\style.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\favicon.ico",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\LICENSE.md",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\LICENSE.md",
       "PackagePath": "staticwebassets\\js\\angular-route\\LICENSE.md"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\README.md",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\README.md",
       "PackagePath": "staticwebassets\\js\\angular-route\\README.md"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\angular-route.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\angular-route.js",
       "PackagePath": "staticwebassets\\js\\angular-route\\angular-route.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\angular-route.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\angular-route.min.js",
       "PackagePath": "staticwebassets\\js\\angular-route\\angular-route.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\angular-route.min.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\angular-route.min.js.map",
       "PackagePath": "staticwebassets\\js\\angular-route\\angular-route.min.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\bower.json",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\bower.json",
       "PackagePath": "staticwebassets\\js\\angular-route\\bower.json"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\index.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\index.js",
       "PackagePath": "staticwebassets\\js\\angular-route\\index.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\package.json",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular-route\\package.json",
       "PackagePath": "staticwebassets\\js\\angular-route\\package.json"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\LICENSE.md",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\LICENSE.md",
       "PackagePath": "staticwebassets\\js\\angular\\LICENSE.md"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\README.md",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\README.md",
       "PackagePath": "staticwebassets\\js\\angular\\README.md"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\angular-csp.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\angular-csp.css",
       "PackagePath": "staticwebassets\\js\\angular\\angular-csp.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\angular.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\angular.js",
       "PackagePath": "staticwebassets\\js\\angular\\angular.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\angular.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\angular.min.js",
       "PackagePath": "staticwebassets\\js\\angular\\angular.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\angular.min.js.gzip",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\angular.min.js.gzip",
       "PackagePath": "staticwebassets\\js\\angular\\angular.min.js.gzip"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\angular.min.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\angular.min.js.map",
       "PackagePath": "staticwebassets\\js\\angular\\angular.min.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\bower.json",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\bower.json",
       "PackagePath": "staticwebassets\\js\\angular\\bower.json"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\index.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\index.js",
       "PackagePath": "staticwebassets\\js\\angular\\index.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\package.json",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\angular\\package.json",
       "PackagePath": "staticwebassets\\js\\angular\\package.json"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\app.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\app.js",
       "PackagePath": "staticwebassets\\js\\app.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.bundle.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.bundle.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.bundle.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.bundle.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.esm.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.esm.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.esm.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.esm.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.esm.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.esm.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.esm.min.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.js",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.min.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\bootstrap\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.min.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\controllers\\formulaireController.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\controllers\\formulaireController.js",
       "PackagePath": "staticwebassets\\js\\controllers\\formulaireController.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\controllers\\gameController.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\controllers\\gameController.js",
       "PackagePath": "staticwebassets\\js\\controllers\\gameController.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\services\\game-service.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\services\\game-service.js",
       "PackagePath": "staticwebassets\\js\\services\\game-service.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\services\\timer-services.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\services\\timer-services.js",
       "PackagePath": "staticwebassets\\js\\services\\timer-services.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\services\\validation-service.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\services\\validation-service.js",
       "PackagePath": "staticwebassets\\js\\services\\validation-service.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\android-chrome-192x192.png",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\android-chrome-192x192.png",
       "PackagePath": "staticwebassets\\ressources\\android-chrome-192x192.png"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\android-chrome-512x512.png",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\android-chrome-512x512.png",
       "PackagePath": "staticwebassets\\ressources\\android-chrome-512x512.png"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\apple-touch-icon.png",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\apple-touch-icon.png",
       "PackagePath": "staticwebassets\\ressources\\apple-touch-icon.png"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\favicon-16x16.png",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\favicon-16x16.png",
       "PackagePath": "staticwebassets\\ressources\\favicon-16x16.png"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\favicon-32x32.png",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\favicon-32x32.png",
       "PackagePath": "staticwebassets\\ressources\\favicon-32x32.png"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\favicon.ico",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\favicon.ico",
       "PackagePath": "staticwebassets\\ressources\\favicon.ico"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\site.webmanifest",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\ressources\\site.webmanifest",
       "PackagePath": "staticwebassets\\ressources\\site.webmanifest"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\views\\game.html",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\views\\game.html",
       "PackagePath": "staticwebassets\\views\\game.html"
     },
     {
-      "Id": "e:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\views\\home\\formulaire-joueur.html",
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\views\\home\\formulaire-joueur.html",
       "PackagePath": "staticwebassets\\views\\home\\formulaire-joueur.html"
     },
     {
