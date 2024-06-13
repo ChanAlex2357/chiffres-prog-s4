@@ -70,7 +70,7 @@ gameApp.controller(
             let time_player = timer.truncTime($scope.timer);
             player.validation = 'disabled';
             $scope.validations.push (
-                {player,answer, time : timer.timerCount(time_player) }
+                {player,answer , distance : Math.abs($scope.goldenNumber - answer), time : timer.timerCount(time_player) }
             );
             /// Verifier si on a fait toutes les validations
             if($scope.validations.length == $rootScope.players.length){

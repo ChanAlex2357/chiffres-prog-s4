@@ -46,9 +46,3 @@ gameApp.controller(
         $rootScope.text = "NUMBER"
     }
 );
-gameApp.controller(
-    'ControllerName',
-    function($scope,$rootScope){
-        $scope.specificNumber = "69";
-    }
-);
