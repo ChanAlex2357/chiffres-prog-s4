@@ -11,9 +11,10 @@ namespace ChiffresApi.Controllers
             return View();
         }
 
-        [HttpGet("{}")]
-        public JsonContent Create(){
-
+        [HttpGet]
+        public String Create(){
+            Game game = new Game();
+            return Json(game).ToString();
         }
     }
 }
