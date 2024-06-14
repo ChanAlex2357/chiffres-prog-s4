@@ -11,10 +11,10 @@ gameApp.service('validation' , function(){
     }
     this.answerCompare = function(A,B){
         console.log(A.distance+" / "+B.distance);
-        if (A.distance < B.distance) {
+        if ( (B.answer === null) || (A.distance < B.distance) ) {
             return -1;
         }
-        if (A.distance > B.distance) {
+        if ( (A.answer === null) || (A.distance > B.distance) ) {
             return 1;
         }
         if (A.distance == B.distance) {
@@ -30,7 +30,6 @@ gameApp.service('validation' , function(){
 
     this.getPlayerValidate = function(validations){
         validations.sort(this.answerCompare);
-        validations.reverse();
         return validations[0];
     }
 });

@@ -12,8 +12,8 @@ gameApp.controller(
         // Le timer
         $scope.timer = {
             hours   : 0,
-            minutes : 1,
-            secondes: 0
+            minutes : 0,
+            secondes: 5
         };
         let timerID ;
 
@@ -29,19 +29,18 @@ gameApp.controller(
         }
         /// Arreter le timer
         $scope.timerState = "allowed";
-        $scope.stopCountdown = function(){
+        $scope.stopCountdown = function(gameState = "stop"){
             $interval.cancel(timerID);
-            $scope.gameStatus = "stop";
+            $scope.gameStatus = gameState;
             $scope.timerState = "disabled";
             return; 
-
         }
         /// Lancer un countdown
         $scope.countdowm = function(){
             timerID = $interval(
                 function(){
                     if( timer.timerCount($scope.timer)<=0){
-                        $scope.stopCountdown();
+                        $scope.validationState();
                         return;
                     }
                     timer.dicreaseTimer($scope.timer);
@@ -60,7 +59,8 @@ gameApp.controller(
             /// Lancer le countdown
             $scope.countdowm();
         }
-        $scope.validations = [];
+
+        $scope.validations=[];
         $scope.validationAnswer = function(player,answer){
             let checkMessage = validation.checkValidation(answer,$scope.gameStatus);
             if(checkMessage != null){
@@ -74,12 +74,14 @@ gameApp.controller(
             );
             /// Verifier si on a fait toutes les validations
             if($scope.validations.length == $rootScope.players.length){
-                $scope.caseStatus = "visible";
-                $scope.stopCountdown();
-                $scope.clearOperation();
-                $scope.gameStatus = "validation";
-                $scope.playerValidate =  validation.getPlayerValidate($scope.validations);
+                $scope.validationState();
             }
+        }
+        $scope.validationState = function(){
+            $scope.caseStatus = "visible";
+            $scope.stopCountdown("validation");
+            $scope.clearOperation();
+            $scope.playerValidate =  validation.getPlayerValidate($scope.validations);
         }
         $scope.clearOperation = function(){
             $scope.playerOperation = "";
