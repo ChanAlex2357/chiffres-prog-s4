@@ -19,10 +19,10 @@ gameApp.service('validation' , function(){
         }
         if (A.distance == B.distance) {
             if (A.time < B.time) {
-                return -1;
+                return 1;
             }
             if (A.time > B.time) {
-                return 1;
+                return -1;
             }
             return 0;
         }

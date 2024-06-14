@@ -65,19 +65,20 @@ gameApp.controller(
     $scope.initValidation = function(){
         $scope.validations = [];
         $rootScope.players.forEach( player => {
-            player.validation  = 'allowed'
+            player.validation  = 'allowed',
+            player.answer = null;
             $scope.validations.push($scope.validationObject(player));
         });
     }
-    $scope.validationAnswer = function(player,answer,index){
-        let checkMessage = validation.checkValidation(answer,$scope.gameStatus);
+    $scope.validationAnswer = function(player,index){
+        let checkMessage = validation.checkValidation(player.answer,$scope.gameStatus);
         if(checkMessage != null){
             alert(checkMessage);
             return;
         }
         let time_player = timer.truncTime($scope.timer);
         player.validation = 'disabled';
-        $scope.validations[index] = $scope.validationObject(player,answer,Math.abs($scope.goldenNumber - answer),timer.timerCount(time_player));
+        $scope.validations[index] = $scope.validationObject(player,player.answer,Math.abs($scope.goldenNumber - player.answer),timer.timerCount(time_player));
         /// Verifier si on a fait toutes les validations
         if($scope.validations[0].answer !== null && $scope.validations[1].answer !== null) {
             $scope.validationState();
@@ -144,8 +145,8 @@ gameApp.controller(
         // Le timer
         $scope.timer = {
             hours   : 0,
-            minutes : 0,
-            secondes: 5
+            minutes : 1,
+            secondes: 0
         };
         $scope.timerState = "allowed";
         $scope.initValidation();
