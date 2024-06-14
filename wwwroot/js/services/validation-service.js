@@ -27,9 +27,8 @@ gameApp.service('validation' , function(){
             return 0;
         }
     }
-
     this.getPlayerValidate = function(validations){
         validations.sort(this.answerCompare);
-        return validations[0];
+        return validations;
     }
 });

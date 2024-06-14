@@ -37,7 +37,7 @@
     <form action="" class="{{caseStatus}}">
         <div class="input-group">
             <button type="button" class="btn btn-secondary" ng-click="clearOperation()">Clear</button>
-            <input type="text" id="" class="form-control" placeholder="{{playerValidate.player.name}} veuillez entrer les operations" ng-model="playerOperation" disabled>
+            <input type="text" id="" class="form-control" placeholder="{{validations[0].player.name}} veuillez entrer les operations" ng-model="playerOperation" disabled>
             <button type="button" class="btn btn-success" ng-click="submitOperation()">Valider</button>
         </div>
     </form>
@@ -56,14 +56,13 @@
                         <div class="row mt-3 justify-content-center">
                             <button type="button"
                             class="btn btn-primary {{player.validation}} col-5 text-uppercase"
-                            ng-click="validationAnswer(player,playerAnswer)">valider</button>
+                            ng-click="validationAnswer(player,playerAnswer,$index)">valider</button>
                         </div>
                 </form>
             </div>
         </div>
     </div>
     <!-- / / / -->
-
 </section>
 
 <!-- END GAME  -->

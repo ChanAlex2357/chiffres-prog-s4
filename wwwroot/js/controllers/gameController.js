@@ -1,34 +1,21 @@
 gameApp.controller(
     'gameController',
     function($scope,$rootScope,$interval,timer,validation,gameNumber){
-        // le chiffre aleatoire en 1 et 100
-        $scope.goldenNumber = gameNumber.generateGolden();
-        // Les chffres a utiliser lors du calcul
-        $scope.gameNumbers = gameNumber.generateNumbers(7,1,100);
-        // L'etat de la partie
-        $scope.gameStatus = "stop";
-        $scope.caseStatus = "invisible";
-        $scope.playerOperation ;
-        // Le timer
-        $scope.timer = {
-            hours   : 0,
-            minutes : 0,
-            secondes: 5
-        };
+        $scope.goldenNumber;
+        $scope.gameNumbers;
+        $scope.gameStatus
+        $scope.caseStatus;
+        $scope.playerOperation;
+        $scope.timer;
+        $scope.timerState;
+        $scope.validations = [];
         let timerID ;
-
-        $rootScope.players.forEach( player => {
-            player.validation = 'allowed'
-        });
-
-        $scope.playerValidate = {name:''};
     /// Functions
         /// Transformer le chiffre en texte de temps
         $scope.timerLayout = function(){
             return timer.fullTimerCaractere($scope.timer);
         }
         /// Arreter le timer
-        $scope.timerState = "allowed";
         $scope.stopCountdown = function(gameState = "stop"){
             $interval.cancel(timerID);
             $scope.gameStatus = gameState;
@@ -40,6 +27,12 @@ gameApp.controller(
             timerID = $interval(
                 function(){
                     if( timer.timerCount($scope.timer)<=0){
+                        if($scope.validations[0].answer == null && $scope.validations[1].answer == null) {
+                            alert("Aucun gagnant car aucune reponse valide");
+                            $scope.stopCountdown();
+                            $scope.initGame();
+                            return;
+                        }
                         $scope.validationState();
                         return;
                     }
@@ -59,64 +52,106 @@ gameApp.controller(
             /// Lancer le countdown
             $scope.countdowm();
         }
-
-        $scope.validations=[];
-        $scope.validationAnswer = function(player,answer){
-            let checkMessage = validation.checkValidation(answer,$scope.gameStatus);
-            if(checkMessage != null){
-                alert(checkMessage);
-                return;
-            }
-            let time_player = timer.truncTime($scope.timer);
-            player.validation = 'disabled';
-            $scope.validations.push (
-                {player,answer , distance : Math.abs($scope.goldenNumber - answer), time : timer.timerCount(time_player) }
-            );
-            /// Verifier si on a fait toutes les validations
-            if($scope.validations.length == $rootScope.players.length){
-                $scope.validationState();
-            }
-        }
-        $scope.validationState = function(){
-            $scope.caseStatus = "visible";
-            $scope.stopCountdown("validation");
-            $scope.clearOperation();
-            $scope.playerValidate =  validation.getPlayerValidate($scope.validations);
-        }
-        $scope.clearOperation = function(){
-            $scope.playerOperation = "";
-            $scope.gameNumbers.forEach(gameNumber => {
-                gameNumber.used = false;
-            });
-        }
-        $scope.operationResult = 0;
-        $scope.submitOperation = function(){
-            $scope.operationResult = eval($scope.playerOperation);
-            /// Verification de la reponse
-            if($scope.playerValidate.answer == Number.parseInt($scope.operationResult) ){
-                alert("RESULT is correct : "+$scope.operationResult);
-                let current_point = Number.parseInt($scope.playerValidate.player.point)
-                $scope.playerValidate.player.point = current_point + 1;
-
-            }
-            else{
-                alert("RESULT is incorect ! : "+$scope.operationResult);
-            }
-        }
-        $scope.addToOperaiion = function(operate){
-            if($scope.gameStatus != 'validation'){
-                return;
-            }
-                if(operate.used == true){
-                    return;
-                }
-                let value = operate.value;
-                if( value === undefined){
-                    value = operate;
-                }
-                $scope.playerOperation += ''+value;
-                operate.used = true;
-                return;
+        
+/// V A L I D A T I O N
+    $scope.validationObject = function(player_ , answer_ = null , distance_ = null , time_ = null){
+        return {
+            player : player_,
+            answer : answer_,
+            distance : distance_,
+            time : time_
         }
     }
+    $scope.initValidation = function(){
+        $scope.validations = [];
+        $rootScope.players.forEach( player => {
+            player.validation  = 'allowed'
+            $scope.validations.push($scope.validationObject(player));
+        });
+    }
+    $scope.validationAnswer = function(player,answer,index){
+        let checkMessage = validation.checkValidation(answer,$scope.gameStatus);
+        if(checkMessage != null){
+            alert(checkMessage);
+            return;
+        }
+        let time_player = timer.truncTime($scope.timer);
+        player.validation = 'disabled';
+        $scope.validations[index] = $scope.validationObject(player,answer,Math.abs($scope.goldenNumber - answer),timer.timerCount(time_player));
+        /// Verifier si on a fait toutes les validations
+        if($scope.validations[0].answer !== null && $scope.validations[1].answer !== null) {
+            $scope.validationState();
+        }
+    }
+    $scope.validationState = function(){
+        $scope.caseStatus = "visible";
+        $scope.stopCountdown("validation");
+        $scope.clearOperation();
+        $scope.validations.sort(validation.answerCompare);
+    }
+
+
+/// O P E R A T I O N
+    $scope.operationResult = 0;
+    $scope.clearOperation = function(){
+        $scope.playerOperation = "";
+        $scope.gameNumbers.forEach(gameNumber => {
+            gameNumber.used = false;
+        });
+    }
+    $scope.addPlayerPoint = function(player,point_){
+        let current_point = Number.parseInt(player.point);
+        player.point = current_point + 1; 
+    }
+    $scope.submitOperation = function(){
+        $scope.operationResult = eval($scope.playerOperation);
+        /// Verification de la reponse
+        if($scope.validations[0].answer == Number.parseInt($scope.operationResult) ){
+            alert("RESULT is correct : "+$scope.operationResult);
+            $scope.addPlayerPoint($scope.validations[0].player)
+        }
+        else{
+            alert("RESULT is incorect ! : "+$scope.operationResult);
+            $scope.addPlayerPoint($scope.validations[1].player)
+        }
+        $scope.initGame();
+    }
+    $scope.addToOperaiion = function(operate){
+        if($scope.gameStatus != 'validation'){
+            return;
+        }
+            if(operate.used == true){
+                return;
+            }
+            let value = operate.value;
+            if( value === undefined){
+                value = operate;
+            }
+            $scope.playerOperation += ''+value;
+            operate.used = true;
+            return;
+    }
+
+    $scope.initGame = function(){
+        // le chiffre aleatoire en 1 et 100
+        $scope.goldenNumber = gameNumber.generateGolden();
+        // Les chffres a utiliser lors du calcul
+        $scope.gameNumbers = gameNumber.generateNumbers(7,1,100);
+        // L'etat de la partie
+        $scope.gameStatus = "stop";
+        $scope.caseStatus = "invisible";
+        $scope.playerOperation ;
+        // Le timer
+        $scope.timer = {
+            hours   : 0,
+            minutes : 0,
+            secondes: 5
+        };
+        $scope.timerState = "allowed";
+        $scope.initValidation();
+    }
+    $scope.initGame();
+}
+
+
 );
