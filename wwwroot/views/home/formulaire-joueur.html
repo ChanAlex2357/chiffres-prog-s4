@@ -6,7 +6,7 @@
                     
                         <div ng-repeat="player in players">
                             <div class="input-group mb-3">
-                                <input class="form-control" ng-model=player.name>
+                                <input class="form-control" title="player-name" ng-model=player.name>
                                 <button
                                 type="button"
                                 class="btn btn-danger"
@@ -28,11 +28,12 @@
                                 type="button"
                                 class="btn btn-success"
                                 ng-click="addPlayer()"
+                                title="playTimer"
                             >
                                 <i class="bi-person-plus"></i>
                             </button>
                         </div>
-                        <button class="btn btn-primary">P L A Y</button>
+                        <a href="#!/game" class="btn btn-primary">P L A Y</a>
                 </div>
             </section>
             

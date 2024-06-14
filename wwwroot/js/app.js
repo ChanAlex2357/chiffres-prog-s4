@@ -26,29 +26,24 @@ gameApp.run(function($rootScope){
             "+","-","*","/","(",")"
         ]
     }
-    $rootScope.players = [
-        {
-            name:'Player 1',
-            point:0,
-            validation : 'allowed'
-        },
-        {
-            name:'Player 2',
-            point:0 ,
-            validation : 'allowed'
-        }
-    ];
+    
+    $rootScope.players = [];
+    $rootScope.addPlayer = function(playerName,starterPoint = 0){
+        $rootScope.players.push({
+            name:playerName,
+            point:starterPoint,
+            validation:'allowed',
+            answer:null,
+            time:null
+        });
+    }
+    $rootScope.addPlayer('Player 1');
+    $rootScope.addPlayer('Player 2');
 })
 // CONTROLLERS
 gameApp.controller(
     'AppController',
     function($rootScope){
         $rootScope.text = "NUMBER"
-    }
-);
-gameApp.controller(
-    'ControllerName',
-    function($scope,$rootScope){
-        $scope.specificNumber = "69";
     }
 );

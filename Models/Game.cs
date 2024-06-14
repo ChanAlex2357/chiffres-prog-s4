@@ -13,5 +13,9 @@ namespace ChiffresApi.Models
 
             this.GameTimer = new Timer(0,1,0); 
         }
+        static public int[] generateNumbers(int isa , int min , int max){
+            int[] numbers = new int[isa];
+            return numbers;
+        }
     }
 }
