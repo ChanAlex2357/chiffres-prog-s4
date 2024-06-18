@@ -11,7 +11,7 @@ gameApp.config(['$routeProvider' ,  $routeProvider =>{
             controller: 'gameController'
         })
         .otherwise({
-            redirectTo:'/game'
+            redirectTo:'/home'
         });
 }]);
 gameApp.run(function($rootScope){
@@ -37,13 +37,27 @@ gameApp.run(function($rootScope){
             time:null
         });
     }
+    $rootScope.errorMessage = null;
     $rootScope.addPlayer('Player 1');
     $rootScope.addPlayer('Player 2');
+    $rootScope.numberOrigin = 500;
+    $rootScope.playNumbers = [];
+    $rootScope.addNumber = function(number){
+        $rootScope.playNumbers.push({value : number , used : false });
+    }
 })
 // CONTROLLERS
 gameApp.controller(
     'AppController',
-    function($rootScope){
+    function($scope,$rootScope){
         $rootScope.text = "NUMBER"
+        $scope.replaceNumber = function(num){
+            $rootScope.numberOrigin = num;
+        }
+        if($rootScope.errorMessage != null) {
+            alert($rootScope.errorMessage);
+            $rootScope.errorMessage = null;
+        }
     }
+    
 );

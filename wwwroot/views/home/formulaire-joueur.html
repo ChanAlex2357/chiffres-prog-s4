@@ -1,19 +1,27 @@
 
             <!-- DEBUT FORMULAIRE JOUEUR -->
-            
             <section class="container row" id="formContainer" ng-controller="playerFormController">
                 <div class="mx-auto w-50 card p-5">
-                    
-                        <div ng-repeat="player in players">
+                    <div class="mb-5">
+                        <label for="goldenNumber" class="h2"> THE NUMBER : {{numberOrigin}}</label>
+                        <div class="input-group">
+
+                            <input id="goldenNumber" type="number" ng-model="numNum" class="form-control">
+                            <button
+                            id="playerBtn"
+                            type="button"
+                            class="btn btn-success"
+                            ng-click="replaceNumber(numNum)"
+                            title="playTimer"
+                            >
+                            Replace number
+                            </button>
+                        </div>
+                    </div>
+                        <h2> - Number List -</h2>
+                        <div ng-repeat="number in playNumbers">
                             <div class="input-group mb-3">
-                                <input class="form-control" title="player-name" ng-model=player.name>
-                                <button
-                                type="button"
-                                class="btn btn-danger"
-                                ng-click="removePlayer($index)"
-                                >
-                                    <b>-</b>
-                                </button>
+                                <input class="form-control text-dark" title="player-name" ng-model=number.value>
                             </div>
                         </div>
                         <div class="input-group mb-5">
@@ -21,20 +29,20 @@
                                 class="form-control" 
                                 type="text" 
                                 id="playerName" 
-                                ng-model="playerName"
-                                placeholder="Player Name"
+                                ng-model="numberValue"
+                                placeholder="Number Value"
                             ><button
                                 id="playerBtn"
                                 type="button"
                                 class="btn btn-success"
-                                ng-click="addPlayer()"
+                                ng-click="addNumber(numberValue)"
                                 title="playTimer"
                             >
-                                <i class="bi-person-plus"></i>
+                                Add number
                             </button>
                         </div>
+                        
                         <a href="#!/game" class="btn btn-primary">P L A Y</a>
                 </div>
             </section>
-            
             <!-- FIN FORMULAIRE JOUEUR -->
