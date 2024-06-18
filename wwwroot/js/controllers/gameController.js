@@ -138,8 +138,6 @@ gameApp.controller(
         $scope.goldenNumber = $rootScope.numberOrigin;
         // Les chffres a utiliser lors du calcul
         $scope.gameNumbers = $rootScope.playNumbers;
-        console.log($rootScope.playNumbers);
-        console.log($scope.gameNumbers);
         if($scope.goldenNumber == null || $scope.gameNumbers.length < 7){
             $location.path('/home');
             $rootScope.errorMessage = 'Configuration de jeu incomplete';
