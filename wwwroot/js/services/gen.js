@@ -130,6 +130,5 @@ function findBestCombinaison(toolsNumbers,targetNumber){
 
 genButton.addEventListener('click',(event) => {
     let operations = findBestCombinaison(toolsNumbers,targetNumber)
-    // display_population(pop);
     showSolution(operations);
 })
