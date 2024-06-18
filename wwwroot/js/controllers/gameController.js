@@ -1,6 +1,6 @@
 gameApp.controller(
     'gameController',
-    function($scope,$rootScope,$interval,timer,validation,gameNumber){
+    function($scope,$rootScope,$interval,timer,validation,gameNumber,$location){
         $scope.goldenNumber;
         $scope.gameNumbers;
         $scope.gameStatus
@@ -135,9 +135,15 @@ gameApp.controller(
 
     $scope.initGame = function(){
         // le chiffre aleatoire en 1 et 100
-        $scope.goldenNumber = gameNumber.generateGolden();
+        $scope.goldenNumber = $rootScope.numberOrigin;
         // Les chffres a utiliser lors du calcul
-        $scope.gameNumbers = gameNumber.generateNumbers(7,1,100);
+        $scope.gameNumbers = $rootScope.playNumbers;
+        console.log($rootScope.playNumbers);
+        console.log($scope.gameNumbers);
+        if($scope.goldenNumber == null || $scope.gameNumbers.length < 7){
+            $location.path('/home');
+            $rootScope.errorMessage = 'Configuration de jeu incomplete';
+        }
         // L'etat de la partie
         $scope.gameStatus = "stop";
         $scope.caseStatus = "invisible";
