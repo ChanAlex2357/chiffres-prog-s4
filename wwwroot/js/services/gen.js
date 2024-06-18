@@ -3,7 +3,7 @@ let solution = document.getElementById("operationSolution")
 
 let targetNumber = 735;
 let targetLimit = 1000;
-let toolsNumbers = [77,69,16,6,14,9,25];
+let toolsNumbers = [77,69,16,11,14,9,6];
 let operations = ["+","-","*","/"];
 
 function calcDistance( ref , target ){
@@ -15,20 +15,29 @@ function calcDistanceFormString(ref_str,target){
 /// Extractions des nombres dans une operation
 function extractNumbers(operation) {
     // Utilise une expression régulière pour trouver tous les nombres dans la chaîne
-    const numbers = operation.match(/-?\d+(\.\d+)?/g);
-    // Convertit les résultats de la recherche (qui sont des chaînes) en nombres absolus
-    return numbers ? numbers.map(number => Math.abs(Number(number))) : [];
+    try {
+        const numbers = operation.match(/-?\d+(\.\d+)?/g);
+        // Convertit les résultats de la recherche (qui sont des chaînes) en nombres absolus
+        return numbers ? numbers.map(number => Math.abs(Number(number))) : [];
+    } catch (error) {
+        return operation
+    }
 }
 function filterOperations(operations, excludeNumbers) {
     return operations.filter(operation => {
-        const numbersInOperation = extractNumbers(operation);
+        const numbersInOperation  = extractNumbers(operation);
         // Vérifie si aucun des nombres dans l'opération n'est dans la liste des nombres à exclure
         if( calcDistanceFormString(operation,targetNumber) > targetLimit){
             return false;
         }
-        let test = !numbersInOperation.some((number) => {
-            return excludeNumbers.includes(number)
-        });
+        let test ;
+        try {
+            test = !numbersInOperation.some((number) => {
+                return excludeNumbers.includes(number)
+            });
+        } catch (error) {
+            test = !excludeNumbers.includes(numbersInOperation)
+        }
         return test;
     });
 }
@@ -59,10 +68,11 @@ function generatePopulation(feeds){
     let pop = [];
     let individuals = Array.from(feeds);
     while( individuals.length > 0 ){
-        generateIndividual( individuals.pop() , individuals , pop );
+        generateIndividual( individuals.shift() , individuals , pop );
     }
     return pop;
 }
+
 function showSolution(operation){
     console.log("Proposition de solution");
     console.log(toolsNumbers);
@@ -75,28 +85,51 @@ function display_population(pop){
     pop.forEach(individue =>{
         let listNode = document.createElement('li');
         listNode.textContent = individue+"  === " + calcDistanceFormString(individue,targetNumber) +" === "+extractNumbers(individue);
+        // listNode.textContent = individue;
         popList.appendChild(listNode);
     })
 }
-function selection_naturel(pop){
+function selection_naturel(pop,targetNumber,origins){
     fitnessPop(pop,targetNumber);
-    let new_pop = [pop[0]];
-    let bestNumbers = extractNumbers(pop[0]);
-    pop = filterOperations(pop,bestNumbers);
-    return new_pop.concat(pop)
+    let new_pop = [];
+    let bestOperation = pop[0]
+    let bestNumbers = extractNumbers(bestOperation);
+    // pop = filterOperations(pop,bestNumbers);
+    origins = filterOperations(origins,bestNumbers);
+    // new_pop = [bestOperation].concat(pop).concat(origins)
+    new_pop = [bestOperation].concat(origins)
+    fitnessPop(new_pop,targetNumber);
+    return new_pop
 }
-function mutation(pop){
-    let muttet_pop = generatePopulation(pop)
-    muttet_pop = selection_naturel(muttet_pop)
+function mutation(pop,targetNumber,origins){
+    let muttet_pop= [] ;
+    generateIndividual( pop.shift() , pop , muttet_pop );
+    muttet_pop = selection_naturel(muttet_pop,targetNumber,origins)
     return muttet_pop
 }
 
-genButton.addEventListener('click',(event) => {
-    let operations = "X-X-X-X-X";
-    console.log(extractNumbers("(9*77)-(6+25)"));
+function findBestCombinaison(toolsNumbers,targetNumber){
     let pop = generatePopulation(toolsNumbers);
-    pop = selection_naturel(pop)
-    pop = mutation(pop);
+    pop = selection_naturel(pop,targetNumber,toolsNumbers)
 
-    display_population(pop);
+    let bestCombinaison;
+    let best_distance = targetNumber;
+    let current_distance = calcDistanceFormString(pop[0],targetNumber);
+    while( current_distance < best_distance){
+        best_distance = current_distance;
+        bestCombinaison = pop[0];
+        pop = mutation(pop,targetNumber,toolsNumbers);
+        current_distance = calcDistanceFormString(pop[0],targetNumber)
+        if(current_distance < 1 && current_distance > 0){
+            current_distance = 1;
+        }
+    }
+    return bestCombinaison;
+
+}
+
+genButton.addEventListener('click',(event) => {
+    let operations = findBestCombinaison(toolsNumbers,targetNumber)
+    // display_population(pop);
+    showSolution(operations);
 })
