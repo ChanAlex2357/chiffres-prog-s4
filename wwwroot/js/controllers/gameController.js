@@ -1,6 +1,6 @@
 gameApp.controller(
     'gameController',
-    function($scope,$rootScope,$interval,timer,validation,gameNumber,$location){
+    function($scope,$rootScope,$interval,timer,validation,gameNumber,genetic,$location){
         $scope.goldenNumber;
         $scope.gameNumbers;
         $scope.gameStatus
@@ -10,6 +10,8 @@ gameApp.controller(
         $scope.timerState;
         $scope.validations = [];
         let timerID ;
+        $scope.proposeNumber;
+        $scope.proposeOperation;
     /// Functions
         /// Transformer le chiffre en texte de temps
         $scope.timerLayout = function(){
@@ -155,6 +157,15 @@ gameApp.controller(
         $scope.timerState = "allowed";
         $scope.initValidation();
     }
+    $scope.proposerSolution = function(){
+        $scope.proposeOperation =  genetic.findBestCombinaison(
+            $scope.gameNumbers,
+            $scope.goldenNumber
+        );
+        $scope.proposeNumber = eval($scope.proposeOperation);
+    }
+
+
     $scope.initGame();
 }
 

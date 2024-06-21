@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "49M5EihAyQa20kq0GNgZPiO8/zg7mS8pd09k0j3LCmY=",
+  "Hash": "btf5w1aEt9w7t29ry6ZvOB3tKi4VREY46UuK1gn+usw=",
   "Source": "ChiffresApi",
   "BasePath": "_content/ChiffresApi",
   "Mode": "Default",
@@ -813,6 +813,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\services\\game-service.js"
+    },
+    {
+      "Identity": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\services\\genetic.js",
+      "SourceId": "ChiffresApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\",
+      "BasePath": "_content/ChiffresApi",
+      "RelativePath": "js/services/genetic.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\services\\genetic.js"
     },
     {
       "Identity": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\services\\timer-services.js",

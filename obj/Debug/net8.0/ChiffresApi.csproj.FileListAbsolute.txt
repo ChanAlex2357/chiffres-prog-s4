@@ -30,10 +30,6 @@ E:\Work Section\INFORMATIQUE\BINARY\S4\Prog\ChiffresApi\ChiffresApi\obj\Debug\ne
 E:\Work Section\INFORMATIQUE\BINARY\S4\Prog\ChiffresApi\ChiffresApi\obj\Debug\net8.0\ref\ChiffresApi.dll
 e:\Work Section\INFORMATIQUE\BINARY\S4\Prog\chiffres-prog-s4\bin\Debug\net8.0\appsettings.Development.json
 e:\Work Section\INFORMATIQUE\BINARY\S4\Prog\chiffres-prog-s4\bin\Debug\net8.0\appsettings.json
-e:\Work Section\INFORMATIQUE\BINARY\S4\Prog\chiffres-prog-s4\bin\Debug\net8.0\WEB\assets\js\angular-route\bower.json
-e:\Work Section\INFORMATIQUE\BINARY\S4\Prog\chiffres-prog-s4\bin\Debug\net8.0\WEB\assets\js\angular-route\package.json
-e:\Work Section\INFORMATIQUE\BINARY\S4\Prog\chiffres-prog-s4\bin\Debug\net8.0\WEB\assets\js\angular\bower.json
-e:\Work Section\INFORMATIQUE\BINARY\S4\Prog\chiffres-prog-s4\bin\Debug\net8.0\WEB\assets\js\angular\package.json
 e:\Work Section\INFORMATIQUE\BINARY\S4\Prog\chiffres-prog-s4\bin\Debug\net8.0\ChiffresApi.staticwebassets.runtime.json
 e:\Work Section\INFORMATIQUE\BINARY\S4\Prog\chiffres-prog-s4\bin\Debug\net8.0\ChiffresApi.exe
 e:\Work Section\INFORMATIQUE\BINARY\S4\Prog\chiffres-prog-s4\bin\Debug\net8.0\ChiffresApi.deps.json
