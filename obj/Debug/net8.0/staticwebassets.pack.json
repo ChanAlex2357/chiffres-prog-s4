@@ -165,6 +165,10 @@
       "PackagePath": "staticwebassets\\js\\services\\game-service.js"
     },
     {
+      "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\services\\genetic.js",
+      "PackagePath": "staticwebassets\\js\\services\\genetic.js"
+    },
+    {
       "Id": "E:\\Work Section\\INFORMATIQUE\\BINARY\\S4\\Prog\\chiffres-prog-s4\\wwwroot\\js\\services\\timer-services.js",
       "PackagePath": "staticwebassets\\js\\services\\timer-services.js"
     },

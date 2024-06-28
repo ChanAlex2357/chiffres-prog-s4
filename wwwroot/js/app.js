@@ -40,7 +40,7 @@ gameApp.run(function($rootScope){
     $rootScope.errorMessage = null;
     $rootScope.addPlayer('Player 1');
     $rootScope.addPlayer('Player 2');
-    $rootScope.numberOrigin = 500;
+    $rootScope.numberOrigin = 935;
     $rootScope.playNumbers = [];
     $rootScope.addNumber = function(number){
         $rootScope.playNumbers.push({value : number , used : false });
@@ -58,6 +58,9 @@ gameApp.controller(
             alert($rootScope.errorMessage);
             $rootScope.errorMessage = null;
         }
+        let playNumbers = [77,14,6,2,83,69,12];
+        playNumbers.forEach( number_ => {
+            $rootScope.addNumber(number_);
+        });
     }
-    
 );

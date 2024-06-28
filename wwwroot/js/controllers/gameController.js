@@ -1,6 +1,6 @@
 gameApp.controller(
     'gameController',
-    function($scope,$rootScope,$interval,timer,validation,gameNumber,$location){
+    function($scope,$rootScope,$interval,timer,validation,gameNumber,genetic,$location){
         $scope.goldenNumber;
         $scope.gameNumbers;
         $scope.gameStatus
@@ -10,6 +10,8 @@ gameApp.controller(
         $scope.timerState;
         $scope.validations = [];
         let timerID ;
+        $scope.proposeNumber;
+        $scope.proposeOperation;
     /// Functions
         /// Transformer le chiffre en texte de temps
         $scope.timerLayout = function(){
@@ -138,8 +140,6 @@ gameApp.controller(
         $scope.goldenNumber = $rootScope.numberOrigin;
         // Les chffres a utiliser lors du calcul
         $scope.gameNumbers = $rootScope.playNumbers;
-        console.log($rootScope.playNumbers);
-        console.log($scope.gameNumbers);
         if($scope.goldenNumber == null || $scope.gameNumbers.length < 7){
             $location.path('/home');
             $rootScope.errorMessage = 'Configuration de jeu incomplete';
@@ -156,7 +156,21 @@ gameApp.controller(
         };
         $scope.timerState = "allowed";
         $scope.initValidation();
+        $scope.gameNumbersValues = [];
+        $scope.gameNumbers.forEach( number_ => {
+            $scope.gameNumbersValues.push(number_.value);
+        });
     }
+    
+    $scope.proposerSolution = function(){
+        $scope.proposeOperation =  genetic.findBestCombinaison(
+            $scope.gameNumbersValues,
+            $scope.goldenNumber
+        );
+        $scope.proposeNumber = eval($scope.proposeOperation);
+    }
+
+
     $scope.initGame();
 }
 
