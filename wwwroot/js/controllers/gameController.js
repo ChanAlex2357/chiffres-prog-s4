@@ -156,10 +156,15 @@ gameApp.controller(
         };
         $scope.timerState = "allowed";
         $scope.initValidation();
+        $scope.gameNumbersValues = [];
+        $scope.gameNumbers.forEach( number_ => {
+            $scope.gameNumbersValues.push(number_.value);
+        });
     }
+    
     $scope.proposerSolution = function(){
         $scope.proposeOperation =  genetic.findBestCombinaison(
-            $scope.gameNumbers,
+            $scope.gameNumbersValues,
             $scope.goldenNumber
         );
         $scope.proposeNumber = eval($scope.proposeOperation);

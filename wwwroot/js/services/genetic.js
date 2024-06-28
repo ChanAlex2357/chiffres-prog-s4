@@ -1,10 +1,12 @@
 gameApp.service('genetic' , function(){
     let operations = ['+','-','*','/'];
     this.calcDistance = function ( ref , target ){
-        return Number.parseInt(Math.abs( target - ref))
+        return Number.parseInt(Math.abs( target - ref));
     };
     this.calcDistanceFormString = function (ref_str,target){
-        return this.calcDistance(eval(ref_str),target)
+        console.log(ref_str+"  --- "+target);
+        let result = this.calcDistance(eval(ref_str),target);
+        return result;
     };
     /// Extractions des nombres dans une operation
     this.extractNumbers = function (operation) {
@@ -17,11 +19,11 @@ gameApp.service('genetic' , function(){
             return operation
         }
     };
-    this.filterOperations = function (operations, excludeNumbers) {
+    this.filterOperations = function (operations, excludeNumbers,targetNumber) {
         return operations.filter(operation => {
             const numbersInOperation  = this.extractNumbers(operation);
             // Vérifie si aucun des nombres dans l'opération n'est dans la liste des nombres à exclure
-            if( this.calcDistanceFormString(operation,targetNumber) > targetLimit){
+            if( this.calcDistanceFormString(operation,targetNumber) > 1000){
                 return false;
             }
             let test ;
@@ -66,15 +68,24 @@ gameApp.service('genetic' , function(){
         }
         return pop;
     }
+    // Selection naturel 
     this.selection_naturel = function (pop,targetNumber,origins){
         this.fitnessPop(pop,targetNumber);
         let new_pop = [];
         let bestOperation = pop[0]
         let bestNumbers = this.extractNumbers(bestOperation);
-        // pop = this.filterOperations(pop,bestNumbers);
-        origins = this.filterOperations(origins,bestNumbers);
-        // new_pop = [bestOperation].concat(pop).concat(origins)
+        origins = this.filterOperations(origins,bestNumbers,targetNumber);
         new_pop = [bestOperation].concat(origins)
+        this.fitnessPop(new_pop,targetNumber);
+        return new_pop
+    }
+    this.selection_naturel = function (pop,targetNumber,origins){
+        this.fitnessPop(pop,targetNumber);
+        let new_pop = [];
+        let bestOperation = pop[0]
+        let bestNumbers = this.extractNumbers(bestOperation);
+        pop = this.filterOperations(pop,bestNumbers,targetNumber);
+        new_pop = [bestOperation].concat(pop).concat(origins)
         this.fitnessPop(new_pop,targetNumber);
         return new_pop
     }
@@ -88,7 +99,7 @@ gameApp.service('genetic' , function(){
     this.findBestCombinaison = function (toolsNumbers,targetNumber){
         let pop = this.generatePopulation(toolsNumbers);
         pop = this.selection_naturel(pop,targetNumber,toolsNumbers)
-
+        console.log(pop);
         let bestCombinaison;
         let best_distance = targetNumber;
         let current_distance = this.calcDistanceFormString(pop[0],targetNumber);
@@ -96,12 +107,12 @@ gameApp.service('genetic' , function(){
             best_distance = current_distance;
             bestCombinaison = pop[0];
             pop = this.mutation(pop,targetNumber,toolsNumbers);
+            console.log(pop);
             current_distance = this.calcDistanceFormString(pop[0],targetNumber)
             if(current_distance < 1 && current_distance > 0){
                 current_distance = 1;
             }
         }
         return bestCombinaison;
-
     }
 })
